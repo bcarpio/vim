@@ -1,9 +1,11 @@
 set nocompatible
 filetype off
 " Load Vindle
+" Type :source % (Noob)
 " Type :PluginInstall (Noob)
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'stephpy/vim-yaml'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
@@ -22,6 +24,9 @@ Bundle "garbas/vim-snipmate"
 Bundle "vadv/vim-chef"
 Plugin 'elzr/vim-json'
 Plugin 'https://github.com/vim-scripts/groovy.vim.git'
+Plugin 'yggdroot/indentline'
+Plugin 'hdima/python-syntax'
+Plugin 'valloric/youcompleteme'
 call vundle#end()
 
 " Enable Syntax Highlight
