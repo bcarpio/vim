@@ -5,6 +5,7 @@ filetype off
 " Type :PluginInstall (Noob)
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+Plugin 'hashivim/vim-terraform'
 Plugin 'stephpy/vim-yaml'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
