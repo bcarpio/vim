@@ -1,5 +1,5 @@
 set nocompatible
-filetype off
+filetype on
 " Load Vindle
 " Type :source % (Noob)
 " Type :PluginInstall (Noob)
@@ -25,15 +25,21 @@ Bundle "garbas/vim-snipmate"
 Bundle "vadv/vim-chef"
 Plugin 'elzr/vim-json'
 Plugin 'https://github.com/vim-scripts/groovy.vim.git'
-Plugin 'yggdroot/indentline'
+Plugin 'Yggdroot/indentline'
 Plugin 'hdima/python-syntax'
-Plugin 'valloric/youcompleteme'
+Plugin 'martinda/Jenkinsfile-vim-syntax'
+Bundle 'vim-ruby/vim-ruby'
 call vundle#end()
-
+"
 " Enable Syntax Highlight
 syntax on
 " Enable Indentation
 filetype plugin indent on
+
+" Defaults
+set tabstop=2
+set softtabstop=0 expandtab
+set shiftwidth=2 smarttab
 
 " Setup NerdTree Stuff
 autocmd vimenter * NERDTree
@@ -64,6 +70,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+let g:indentLine_enabled = 1
+let g:indentLine_setColors = 0
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
