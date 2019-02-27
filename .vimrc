@@ -1,5 +1,5 @@
 set nocompatible
-filetype on
+filetype off
 " Load Vindle
 " Type :source % (Noob)
 " Type :PluginInstall (Noob)
@@ -53,7 +53,7 @@ au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
-    \ set textwidth=79 |
+    \ set textwidth=120 |
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix
@@ -72,7 +72,7 @@ let g:syntastic_check_on_wq = 0
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:indentLine_enabled = 1
-let g:indentLine_setColors = 0
+let g:indentLine_setColors = 1
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
