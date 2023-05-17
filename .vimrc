@@ -1,3 +1,4 @@
+set background=dark
 set nocompatible
 filetype off
 " Load Vindle
@@ -13,6 +14,7 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'preservim/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'rodjek/vim-puppet'
 Bundle 'chase/vim-ansible-yaml'
@@ -31,13 +33,17 @@ Plugin 'neomake/neomake'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'salcode/vim-interactive-rebase-reverse'
+Plugin 'morhetz/gruvbox'
+Plugin 'iamcco/markdown-preview.nvim'
 call vundle#end()
 "
 " Enable Syntax Highlight
 syntax on
 " Enable Indentation
 filetype plugin indent on
+
+" Colorscheme
+colorscheme gruvbox
 
 " Defaults
 set tabstop=2
@@ -72,7 +78,7 @@ let g:syntastic_check_on_wq = 0
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:indentLine_enabled = 1
-let g:indentLine_setColors = 0
+let g:indentLine_setColors = 1
 
 nnoremap <F2> :set invpaste paste?<CR>
 set pastetoggle=<F2>
